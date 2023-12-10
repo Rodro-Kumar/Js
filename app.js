@@ -361,150 +361,181 @@
 
 // let arrowFunction = () => {};
 
-// todo : ==> for loop
+// // todo : ==> for loop
 
-for (let fdr = 1; fdr <= 100; fdr++) {
-  // ==> execution body
-  console.log(fdr, "FDR");
-}
+// for (let fdr = 1; fdr <= 100; fdr++) {
+//   // ==> execution body
+//   console.log(fdr, "FDR");
+// }
 
-const namta = prompt("Enter Valid Number");
+// const namta = prompt("Enter Valid Number");
 
-// 3000 X 1 = 3000
-// 3000 X 2 = 6000
-// 3000 X 2 = 6000
-// 3000 X 2 = 6000
-// 3000 X 2 = 6000
-// 3000 X 2 = 6000
+// // 3000 X 1 = 3000
+// // 3000 X 2 = 6000
+// // 3000 X 2 = 6000
+// // 3000 X 2 = 6000
+// // 3000 X 2 = 6000
+// // 3000 X 2 = 6000
 
-for (let i = 1; i <= 10; i++) {
-  //   console.log(namta + "X" + i + "=" + namta * i);
-  console.log(`${namta}  X  ${i}  =   ${namta * i}`); /** template literale */
-}
+// for (let i = 1; i <= 10; i++) {
+//   //   console.log(namta + "X" + i + "=" + namta * i);
+//   console.log(`${namta}  X  ${i}  =   ${namta * i}`); /** template literale */
+// }
 
-// todo : ==> while loop
+// // todo : ==> while loop
 
-let z = 15;
-while (z <= 25) {
-  console.log(z);
-  z++;
-}
+// let z = 15;
+// while (z <= 25) {
+//   console.log(z);
+//   z++;
+// }
 
-//  todo : ==> do-while loop
+// //  todo : ==> do-while loop
 
-let result = "result :- ";
-let i = 0;
+// let result = "result :- ";
+// let i = 0;
 
-do {
-  i = i + 1;
-  result = result + i;
-} while (i < 25);
+// do {
+//   i = i + 1;
+//   result = result + i;
+// } while (i < 25);
 
-console.log(result);
+// console.log(result);
 
-// todo : ==> Array  --> start from [0] index
+// // todo : ==> Array  --> start from [0] index
 
-let actressBollywood = [
-  "Priyanka Chopra Jonas ",
-  "Vidya Balan ",
-  "Deepika Padukone ",
-  "Kangana Ranaut ",
-  "Sameera Reddy ",
-  "Urfi Javed ",
-  " Alia Bhatt ",
-  "Sunnyleon ",
-  "Katrina Kaif ",
-  "Kareena Kapoor ",
-];
-actressBollywood[3] = "Akshay Kumar"; /** array mutition */
-actressBollywood[7] = "Ajay Devgn"; /** array mutition */
+// let actressBollywood = [
+//   "Priyanka Chopra Jonas ",
+//   "Vidya Balan ",
+//   "Deepika Padukone ",
+//   "Kangana Ranaut ",
+//   "Sameera Reddy ",
+//   "Urfi Javed ",
+//   " Alia Bhatt ",
+//   "Sunnyleon ",
+//   "Katrina Kaif ",
+//   "Kareena Kapoor ",
+// ];
+// actressBollywood[3] = "Akshay Kumar"; /** array mutition */
+// actressBollywood[7] = "Ajay Devgn";   /** array mutition */
 
-for (let i = 0; i < actressBollywood.length; i++) {
-  console.log((actressBollywood[i] = `${actressBollywood[i]} Bold`));
-}
+// for (let i = 0; i < actressBollywood.length; i++) {
+//   console.log((actressBollywood[i] = `${actressBollywood[i]} Bold`));
+// }
 
-// todo : ==> array pop   (last element delete )
+// // todo : ==> array pop   (last element delete )
 
-actressBollywood.pop();
-actressBollywood.pop();
-console.log(actressBollywood);
+// actressBollywood.pop();
+// actressBollywood.pop();
+// console.log(actressBollywood);
 
-// todo : ==> array push  (last element add)
+// // todo : ==> array push  (last element add)
 
-actressBollywood.push("Aamir Khan");
-actressBollywood.push("Akshay Kumar");
-console.log(actressBollywood);
+// actressBollywood.push("Aamir Khan");
+// actressBollywood.push("Akshay Kumar");
+// console.log(actressBollywood);
 
-// todo : ==> array unshift   (first element add)
-actressBollywood.unshift("Aamir Khan");
-actressBollywood.unshift("Akshay Kumar");
-console.log(actressBollywood);
+// // todo : ==> array unshift   (first element add)
+// actressBollywood.unshift("Aamir Khan");
+// actressBollywood.unshift("Akshay Kumar");
+// console.log(actressBollywood);
 
-//  todo : ==> array shift  (first element delete)
+// //  todo : ==> array shift  (first element delete)
 
-actressBollywood.shift();
-actressBollywood.shift();
-console.log(actressBollywood);
+// actressBollywood.shift();
+// actressBollywood.shift();
+// console.log(actressBollywood);
 
-//  todo : ==> array splice  (adds and/or removes array elements.)
-actressBollywood.splice(3, 0, "Akshay Kumar");
-actressBollywood.splice(3, 0, "Aamir Khan");
-actressBollywood.splice(3, 3);
+// //  todo : ==> array splice  (adds and/or removes array elements.)
+// actressBollywood.splice(3, 0, "Akshay Kumar");
+// actressBollywood.splice(3, 0, "Aamir Khan");
+// actressBollywood.splice(3, 3);
 
-console.log(actressBollywood);
+// console.log(actressBollywood);
 
-//  todo : normal function () {}
+// //  todo : normal function () {}
 
-function sumFun(number) {
-  let fullName = `Mr. ${number} Karmakar`;
-  console.log(fullName);
-}
-sumFun("Rodro");
+// function sumFun(number) {
+//   let fullName = `Mr. ${number} Karmakar`;
+//   console.log(fullName);
+// }
+// sumFun("Rodro");
 
-function calculation(number) {
-  let square = number ** 4;
-  console.log(square);
-}
+// function calculation(number) {
+//   let square = number ** 4;
+//   console.log(square);
+// }
 
-calculation(3);
+// calculation(3);
 
-function vatPrice(price) {
-  let priceWithVat = price * 20;
-  return priceWithVat;
-}
+// function vatPrice(price) {
+//   let priceWithVat = price * 20;
+//   return priceWithVat;
+// }
 
-function discountPrice(priceWithVat) {
-  let discount = priceWithVat - 1000;
-  console.log("Discount price is : ", discount);
-}
+// function discountPrice(priceWithVat) {
+//   let discount = priceWithVat - 1000;
+//   console.log("Discount price is : ", discount);
+// }
 
-const returnPrice = vatPrice(500);
-discountPrice(returnPrice);
+// const returnPrice = vatPrice(500);
+// discountPrice(returnPrice);
 
-//  todo : ==> arrow function () => {}
+// //  todo : ==> arrow function () => {}
 
-const vatPrice = (price) => {
-  let priceWithVat = price * 4;
-  return priceWithVat;
+// const vatPrice = (price) => {
+//   let priceWithVat = price * 4;
+//   return priceWithVat;
+// };
+
+// const discountPrice = (priceWithVat) => {
+//   let discount = priceWithVat - 1000;
+//   console.log("Discount price is : ", discount);
+// };
+
+// const returnPrice = vatPrice(1000);
+// discountPrice(returnPrice);
+
+// const chargeWithPrice = (price) => {
+//   let priceWithDeliveryCharge = price + 70;
+//   return priceWithDeliveryCharge;
+// };
+
+// const discountPrice = (priceWithDeliveryCharge) => {
+//   let withDiscount = priceWithDeliveryCharge - 20;
+//   console.log("Discount Price IS : ", withDiscount);
+// };
+
+// const returnPrice = chargeWithPrice(120);
+// discountPrice(returnPrice);
+
+//  todo : arrow function & annomouys function
+
+const taxPrice = (price) => {
+  const mainPriceWithTax = parseInt(price);
+  const priceWithVat = mainPriceWithTax * 10;
+  const allPrice = [mainPriceWithTax, priceWithVat];
+  return allPrice;
 };
 
-const discountPrice = (priceWithVat) => {
-  let discount = priceWithVat - 1000;
-  console.log("Discount price is : ", discount);
+const discountPrice = (allPrice) => {
+  //   let orginalPrice = allPrice[0];
+  //   let vatPrice = allPrice[1];
+
+  let [vatPrice, orginalPrice] = allPrice;
+  let withDiscount = vatPrice - 1000;
+  return [orginalPrice, withDiscount, vatPrice];
 };
 
-const returnPrice = vatPrice(1000);
-discountPrice(returnPrice);
+const returnPrice = taxPrice("5000");
+const finalResult = discountPrice(returnPrice);
 
-const chargeWithPrice = (price) => {
-  let priceWithDeliveryCharge = price + 70;
-  return priceWithDeliveryCharge;
-};
-
-const discountPrice = (priceWithDeliveryCharge) => {
-  let withDiscount = priceWithDeliveryCharge - 20;
-  console.log("Discount Price IS : ", withDiscount);
-};
-
-const returnPrice = chargeWithPrice(120);
-discountPrice(returnPrice);
+for (let i = 0; i < finalResult.length; i++) {
+  if (finalResult[i] == 5000) {
+    console.log("The original price :", finalResult[i]);
+  } else if (finalResult[i] == 50000) {
+    console.log("vat Price :", finalResult[i]);
+  } else {
+    console.log("Discount price :", finalResult[i]);
+  }
+}
