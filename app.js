@@ -511,31 +511,164 @@
 
 //  todo : arrow function & annomouys function
 
-const taxPrice = (price) => {
-  const mainPriceWithTax = parseInt(price);
-  const priceWithVat = mainPriceWithTax * 10;
-  const allPrice = [mainPriceWithTax, priceWithVat];
-  return allPrice;
+// const taxPrice = (price) => {
+//   const mainPriceWithTax = parseInt(price);
+//   const priceWithVat = mainPriceWithTax * 10;
+//   const allPrice = [mainPriceWithTax, priceWithVat];
+//   return allPrice;
+// };
+
+// const discountPrice = (allPrice) => {
+//   //   let orginalPrice = allPrice[0];
+//   //   let vatPrice = allPrice[1];
+
+//   let [vatPrice, orginalPrice] = allPrice;
+//   let withDiscount = vatPrice - 1000;
+//   return [vatPrice, orginalPrice, withDiscount];
+// };
+
+// const returnPrice = taxPrice("5000");
+// const finalResult = discountPrice(returnPrice);
+
+// for (let i = 0; i < finalResult.length; i++) {
+//   if (finalResult[i] == 5000) {
+//     console.log("The original price :", finalResult[i]);
+//   } else if (finalResult[i] == 50000) {
+//     console.log("vat Price :", finalResult[i]);
+//   } else {
+//     console.log("Discount price :", finalResult[i]);
+//   }
+// }
+
+// const priceWithVat = (price) => {
+//   const mainPrice = parseInt(price);
+//   const vatPrice = mainPrice * 5;
+//   const allPrice = [mainPrice, vatPrice];
+//   return allPrice;
+// };
+
+// const disCountprice = (allPrice) => {
+//   let [originalPrice, vatPrice] = allPrice;
+//   let discount = vatPrice - 1000;
+//   return [originalPrice, vatPrice, discount];
+// };
+
+// const vatReturne = priceWithVat(5000);
+// const finalResultPrice = disCountprice(vatReturne);
+
+// for (let i = 0; i < finalResultPrice.length; i++) {
+//   if (finalResultPrice[i] == 5000) {
+//     console.log("The orinal Price is : ", finalResultPrice[i]);
+//   } else if (finalResultPrice[i] == 25000) {
+//     console.log("The Vat Price :", finalResultPrice[i]);
+//   } else {
+//     console.log("The Discount Price Is :", finalResultPrice[i]);
+//   }
+// }
+
+// todo : Take Original Price , Vat price10% vat Price20% && return  Original Price , 2 Vat Price
+
+// const withVat10 = (price) => {
+//   const maninPrice = parseInt(price);
+//   const vatPrice = maninPrice * 10;
+//   const vatOriginal = [maninPrice, vatPrice];
+//   return vatOriginal;
+// };
+
+// const withVat20 = (vatOriginal) => {
+//   let [maninPrice, vatPrice] = vatOriginal;
+//   const vatPrice2 = maninPrice * 20;
+//   const vatPrice2Original = [maninPrice, vatPrice, vatPrice2];
+//   return vatPrice2Original;
+// };
+
+// const return1 = withVat10(5000);
+// const returns2 = withVat20(return1);
+
+// for (let i = 0; i < returns2.length; i++) {
+//   if (returns2[i] == 5000) {
+//     console.log("The Original Price Is :", returns2[i]);
+//   } else if (returns2[i] == 50000) {
+//     console.log("The 10% Vat is :", returns2[i]);
+//   } else {
+//     console.log("The 20% vat is :", returns2[i]);
+//   }
+// }
+
+// const taxMainPrice = (price) => {
+//   const mainPrice = parseInt(price);
+//   const vat1 = mainPrice * 10;
+//   const mainPriceWithVat = [mainPrice, vat1];
+//   return mainPriceWithVat;
+// };
+
+// const discount = (mainPriceWithVat) => {
+//   let [mainPrice, vat1] = mainPriceWithVat;
+//   const discountPrice = vat1 - 1000;
+//   const allPrice = [mainPrice, vat1, discountPrice];
+//   return allPrice;
+// };
+
+// const return1 = taxMainPrice(5000);
+// const finalResult = discount(return1);
+// for (let i = 0; i < finalResult.length; i++) {
+//   if (finalResult[i] == 5000) {
+//     console.log("The original Price :", finalResult[i]);
+//   } else if (finalResult[i] == 50000) {
+//     console.log("The Vat Price : ", finalResult[i]);
+//   } else {
+//     console.log("The discount Price :", finalResult[i]);
+//   }
+// }
+
+// todo : take 2 number & return addi , subs , multi , div , expo , modul
+
+const add = (a = 10, b = 10) => {
+  const finalResult = a + b;
+  return finalResult;
 };
 
-const discountPrice = (allPrice) => {
-  //   let orginalPrice = allPrice[0];
-  //   let vatPrice = allPrice[1];
-
-  let [vatPrice, orginalPrice] = allPrice;
-  let withDiscount = vatPrice - 1000;
-  return [orginalPrice, withDiscount, vatPrice];
+const subs = (a = 10, b = 10) => {
+  const subsResult = a - b;
+  return subsResult;
 };
 
-const returnPrice = taxPrice("5000");
-const finalResult = discountPrice(returnPrice);
+const multi = (a = 10, b = 10) => {
+  const multiResult = a * b;
+  return multiResult;
+};
 
-for (let i = 0; i < finalResult.length; i++) {
-  if (finalResult[i] == 5000) {
-    console.log("The original price :", finalResult[i]);
-  } else if (finalResult[i] == 50000) {
-    console.log("vat Price :", finalResult[i]);
-  } else {
-    console.log("Discount price :", finalResult[i]);
+const div = (a = 10, b = 10) => {
+  const divResult = a / b;
+  return divResult;
+};
+
+const expo = (a = 10, b = 10) => {
+  const expoResult = a ** b;
+  return expoResult;
+};
+
+const modul = (a = 10, b = 10) => {
+  const modulResult = a % b;
+  return modulResult;
+};
+
+// Store all Function
+
+const allFunctonArray = [add, subs, multi, div, expo, modul];
+
+const inputfirstValue = document.getElementById("value1");
+const inputsecoundValue = document.getElementById("value2");
+const btn = document.getElementById("btn");
+const display = document.getElementById("display");
+
+btn.addEventListener("click", () => {
+  const firstValue = +inputfirstValue.value;
+  const secoundValue = +inputsecoundValue.value;
+
+  for (let i = 0; i < allFunctonArray.length; i++) {
+    const finalResult = allFunctonArray[i](firstValue, secoundValue);
+    display.innerHTML += `${finalResult} `;
+    console.log(finalResult);
   }
-}
+});
