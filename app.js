@@ -623,14 +623,64 @@
 
 // todo : take 2 number & return addi , subs , multi , div , expo , modul
 
+// const add = (a = 10, b = 10) => {
+//   const finalResult = a + b;
+//   return finalResult;
+// };
+
+// const subs = (a = 10, b = 10) => {
+//   const subsResult = a - b;
+//   return subsResult;
+// };
+
+// const multi = (a = 10, b = 10) => {
+//   const multiResult = a * b;
+//   return multiResult;
+// };
+
+// const div = (a = 10, b = 10) => {
+//   const divResult = a / b;
+//   return divResult;
+// };
+
+// const expo = (a = 10, b = 10) => {
+//   const expoResult = a ** b;
+//   return expoResult;
+// };
+
+// const modul = (a = 10, b = 10) => {
+//   const modulResult = a % b;
+//   return modulResult;
+// };
+
+// // Store all Function
+
+// const allFunctonArray = [add, subs, multi, div, expo, modul];
+
+// const inputfirstValue = document.getElementById("value1");
+// const inputsecoundValue = document.getElementById("value2");
+// const btn = document.getElementById("btn");
+// const display = document.getElementById("display");
+
+// btn.addEventListener("click", () => {
+//   const firstValue = +inputfirstValue.value;
+//   const secoundValue = +inputsecoundValue.value;
+
+//   for (let i = 0; i < allFunctonArray.length; i++) {
+//     const finalResult = allFunctonArray[i](firstValue, secoundValue);
+//     display.innerHTML += `${finalResult} `;
+//     console.log(finalResult);
+//   }
+// });
+
 const add = (a = 10, b = 10) => {
-  const finalResult = a + b;
-  return finalResult;
+  const addResult = a + b;
+  return addResult;
 };
 
-const subs = (a = 10, b = 10) => {
-  const subsResult = a - b;
-  return subsResult;
+const sub = (a = 10, b = 20) => {
+  const subResult = a - b;
+  return subResult;
 };
 
 const multi = (a = 10, b = 10) => {
@@ -653,22 +703,19 @@ const modul = (a = 10, b = 10) => {
   return modulResult;
 };
 
-// Store all Function
-
-const allFunctonArray = [add, subs, multi, div, expo, modul];
-
+const allArrayFunction = [add, sub, multi, div, expo, modul];
 const inputfirstValue = document.getElementById("value1");
-const inputsecoundValue = document.getElementById("value2");
+const inputSecoundValue = document.getElementById("value2");
 const btn = document.getElementById("btn");
 const display = document.getElementById("display");
 
 btn.addEventListener("click", () => {
-  const firstValue = +inputfirstValue.value;
-  const secoundValue = +inputsecoundValue.value;
+  // const firstValue = +inputfirstValue.value;
+  // const secoundValue = +inputSecoundValue.value;
 
-  for (let i = 0; i < allFunctonArray.length; i++) {
-    const finalResult = allFunctonArray[i](firstValue, secoundValue);
-    display.innerHTML += `${finalResult} `;
+  for (let i = 0; i < allArrayFunction.length; i++) {
+    const finalResult = allArrayFunction[i](firstValue, secoundValue);
+    display.innerHTML += `${finalResult}`;
     console.log(finalResult);
   }
 });
