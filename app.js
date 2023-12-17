@@ -673,49 +673,207 @@
 //   }
 // });
 
-const add = (a = 10, b = 10) => {
-  const addResult = a + b;
-  return addResult;
-};
+// const add = (a = 10, b = 10) => {
+//   const addResult = a + b;
+//   const finalResult = { addResult: addResult, funName: "add" };
+//   return finalResult;
+// };
 
-const sub = (a = 10, b = 20) => {
-  const subResult = a - b;
-  return subResult;
-};
+// const sub = (a = 10, b = 20) => {
+//   const subResult = a - b;
+//   const subInfo = { subResult: subResult, funName: "sub" };
+//   return subInfo;
+// };
 
-const multi = (a = 10, b = 10) => {
-  const multiResult = a * b;
-  return multiResult;
-};
+// const multi = (a = 10, b = 10) => {
+//   const multiResult = a * b;
+//   const multiInfo = { multiResult: multiResult, funName: "multi" };
+//   return multiInfo;
+// };
 
-const div = (a = 10, b = 10) => {
-  const divResult = a / b;
-  return divResult;
-};
+// const div = (a = 10, b = 10) => {
+//   const divResult = a / b;
+//   const divInfo = { divResult: divResult, funName: "div" };
+//   return divInfo;
+// };
 
-const expo = (a = 10, b = 10) => {
-  const expoResult = a ** b;
-  return expoResult;
-};
+// const expo = (a = 10, b = 10) => {
+//   const expoResult = a ** b;
+//   const expoInfo = { expoResult: expoResult, funName: "expo" };
+//   return expoInfo;
+// };
 
-const modul = (a = 10, b = 10) => {
-  const modulResult = a % b;
-  return modulResult;
-};
+// const modul = (a = 10, b = 10) => {
+//   const modulResult = a % b;
+//   const modulInfo = { modulResult: modulResult, funName: "modul" };
+//   return modulInfo;
+// };
 
-const allArrayFunction = [add, sub, multi, div, expo, modul];
-const inputfirstValue = document.getElementById("value1");
-const inputSecoundValue = document.getElementById("value2");
-const btn = document.getElementById("btn");
-const display = document.getElementById("display");
+// const allArrayFunction = [add, sub, multi, div, expo, modul];
+// const inputfirstValue = document.getElementById("value1");
+// const inputSecoundValue = document.getElementById("value2");
+// const btn = document.getElementById("btn");
+// const display = document.getElementById("display");
 
-btn.addEventListener("click", () => {
-  // const firstValue = +inputfirstValue.value;
-  // const secoundValue = +inputSecoundValue.value;
+// btn.addEventListener("click", () => {
+//   const firstValue = +inputfirstValue.value;
+//   const secoundValue = +inputSecoundValue.value;
 
-  for (let i = 0; i < allArrayFunction.length; i++) {
-    const finalResult = allArrayFunction[i](firstValue, secoundValue);
-    display.innerHTML += `${finalResult}`;
-    console.log(finalResult);
-  }
-});
+//   for (let i = 0; i < allArrayFunction.length; i++) {
+//     const finalResult = allArrayFunction[i](firstValue, secoundValue);
+//     if (finalResult.funName === "add") {
+//       display.innerHTML += `Additional Result is : ${finalResult.addResult} <br>`;
+//     } else if (finalResult.funName === "sub") {
+//       display.innerHTML += `Substriction Result is : ${finalResult.subResult} <br>`;
+//     } else if (finalResult.funName === "multi") {
+//       display.innerHTML += `Multiply Result is : ${finalResult.multiResult} <br>`;
+//     } else if (finalResult.funName === "div") {
+//       display.innerHTML += `Division Result is : ${finalResult.divResult} <br>`;
+//     } else if (finalResult.funName === "expo") {
+//       display.innerHTML += `Exponential Result is : ${finalResult.expoResult} <br>`;
+//     } else if (finalResult.funName === "modul") {
+//       display.innerHTML += `Modulus Result is : ${finalResult.modulResult} <br>`;
+//     }
+//   }
+// });
+
+//  todo : object
+
+// const dataStorage = {};
+// dataStorage.firstname = "Rodro";
+// dataStorage.lastname = "karmakar";
+// dataStorage.batch = "Fdr 2303";
+// dataStorage.age = "20";
+// dataStorage.status = "online";
+// dataStorage.fullname = function () {
+//   console.log("Fullname");
+// };
+
+// dataStorage.age = "22"; // Muten // value change kora
+
+// console.log(dataStorage);
+
+// let myobj = {
+//   firstName: "Rodro",
+//   lastName: " Karmakar",
+//   job: "Student",
+//   hello: function () {
+//     console.log(this.firstName + this.lastName);
+//   },
+// };
+
+// myobj.hello();
+// myobj.firstName = "Hello";  // muten // value change kora
+// console.log(myobj.firstName);
+
+// for (let x of myobj) {
+//   console.log(x);
+// }
+
+// function makeObject(firstname, lastname) {
+//   this.firstname = firstname;
+//   this.lastname = lastname;
+// }
+
+// const obj1 = new makeObject("rodro", "karmakar");
+// const obj2 = new makeObject("fdr", "2303");
+// const obj3 = new makeObject("fdr", "2303");
+// const obj4 = new makeObject("fdr", "2303");
+// const obj5 = new makeObject("fdr", "2303"); // <=== constractor
+// const obj6 = new makeObject("fdr", "2303");
+// const obj7 = new makeObject("john", "doe");
+// console.log(obj7);
+
+// let obj = {
+//   batch: "fdr",
+//   serial: 2303,
+//   studentlist: ["rodro", "Amir", "imrul", "Efa"],
+//   batchname: function () {
+//     console.log(this.batch + this.serial);
+//   },
+
+//   childObj: {
+//     name: "john",
+//     age: 18,
+//   },
+// };
+
+// obj.studentlist.map(function (item) {  //* <=== looping with map method
+//   console.log(item);
+// });
+
+// obj.batchname();
+// console.log(obj.childObj.age);
+
+// obj.studentlist.forEach((item) => {
+//   console.log(item); // loop korar proccess
+// });
+
+// // todo : string method
+
+// const x = "ABCDEFGHIJ";
+// const y = "hello world";
+
+// console.log(x.length);
+// console.log(x.charAt(0));
+// console.log(x.toLowerCase());
+// console.log(x.toUpperCase());
+// console.log(x.concat(y));
+
+// // todo : replace
+// const y = "hello world hello hello hello";
+// console.log(y.replaceAll("hello", "hlw"));
+
+//  // todo : slice
+// const x = "ABCDEFGHIJ";
+// console.log(x.slice(3, 5));
+
+//  // todo : substring
+// ! note ==>  substring negative value accept kore nah
+// const x = "ABCDEFGHIJ";
+// console.log(x.substring(5, 8));
+
+// // todo : trim
+// const x = "                           ABCDEFGHIJ                         ";
+
+// console.log(x.trim());
+
+//  // todo : substr
+// ! note ==>  substr e sudhu kototomo index number theke suru hobe seta define kore dite hoi , ar koto  index number porjonto extract korte hobe seti define korte hoi
+// * note ==> similar to slice string method
+// const y = "my name is rodro";
+// const substr = y.substr(5, 2);
+// console.log(substr);
+
+// // todo : split
+// const x = "A,B,C,D,E.F.G.H.I.J";
+
+// console.log(x.split(","));
+
+// let url = "http://127.0.0.1:5500/index.html";
+
+// console.log(url.split("/"));
+
+//  // todo : charAt
+// ! note ==> charAt similar to index number
+// const x = "hello world";
+// const charAt = x.charAt(3);
+// console.log(charAt);
+
+//  // todo : charcodeAt
+
+// const y = "Hello world";
+// const charCodeAt = y.charCodeAt(4);
+// console.log(charCodeAt);
+
+//  // todo : index of
+// ! note ==> index of method index number define korte help kore
+// const x = "Hello world";
+// const indexOf = x.indexOf("world");
+// console.log(indexOf);
+
+// todo : includes
+//! note ==> includes method element check kore true or false
+const x = "Hello world";
+const includes = x.includes("Hello");
+console.log(includes);
